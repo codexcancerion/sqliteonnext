@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Database from 'better-sqlite3';
 import db from '@/database/db';
 
 export async function POST(req: NextRequest) {
