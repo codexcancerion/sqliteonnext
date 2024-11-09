@@ -1,8 +1,8 @@
 
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import db from '@/database/db';
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
     // Retrieve all tasks from the database
     const tasks = db.prepare('SELECT * FROM tasks').all();
